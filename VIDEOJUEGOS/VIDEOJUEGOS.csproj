@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A768893-6830-4BCD-9887-3A7A4545A4CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VIDEOJUEGOS</RootNamespace>
+    <AssemblyName>VIDEOJUEGOS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FRMACERCADE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMACERCADE.Designer.cs">
+      <DependentUpon>FRMACERCADE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JUEGODESNAKE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JUEGODESNAKE.Designer.cs">
+      <DependentUpon>JUEGODESNAKE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JUEGOESFERASDELDRAGON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JUEGOESFERASDELDRAGON.Designer.cs">
+      <DependentUpon>JUEGOESFERASDELDRAGON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JUEGOGATITO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JUEGOGATITO.Designer.cs">
+      <DependentUpon>JUEGOGATITO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JUEGOMEMORAMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JUEGOMEMORAMA.Designer.cs">
+      <DependentUpon>JUEGOMEMORAMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JUEGOTRAGAMONEDAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JUEGOTRAGAMONEDAS.Designer.cs">
+      <DependentUpon>JUEGOTRAGAMONEDAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAINFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAINFORM.Designer.cs">
+      <DependentUpon>MAINFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRMACERCADE.resx">
+      <DependentUpon>FRMACERCADE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JUEGODESNAKE.resx">
+      <DependentUpon>JUEGODESNAKE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JUEGOESFERASDELDRAGON.resx">
+      <DependentUpon>JUEGOESFERASDELDRAGON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JUEGOGATITO.resx">
+      <DependentUpon>JUEGOGATITO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JUEGOMEMORAMA.resx">
+      <DependentUpon>JUEGOMEMORAMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JUEGOTRAGAMONEDAS.resx">
+      <DependentUpon>JUEGOTRAGAMONEDAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAINFORM.resx">
+      <DependentUpon>MAINFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireemblem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alm and celica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Corrin_%28mujer%29_en_Fire_Emblem_Fates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orig_81167.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espada_Maestra_TWW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondowindwaker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toon_Ganondorf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toonlink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondowindwaker1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espada_Maestra_TWW1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1116393060_393060_000002_album_normal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corrin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robin-male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roy_FE_The_Binding_Blade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ryoma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\712181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondosnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuerposnakederecho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comidasnake.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuerposnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabezaabajosnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabezaarribasnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabezaderechasnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabezaizquierdasnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pong1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pong2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pong3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fpndopokemon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perdedor.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pkb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pkb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pkb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo flash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losflash9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuerposnakedown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuerposnakeleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuerposnakeright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuerposnakeup.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
